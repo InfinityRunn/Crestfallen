@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/Prototype1.unity
+    guid: 10c0dc1017d05094089f220f11464ac7
+  - enabled: 0
+    path: Assets/Scenes/TempProto2.unity
+    guid: 29a35450bf81c9a42a612104809fd360
+  - enabled: 0
+    path: Assets/Scenes/Prototype2.unity
+    guid: 818e899d6826a7c4b9b081c3e89dee04
+  - enabled: 1
+    path: Assets/Scenes/Bar - Rock Bottom.unity
+    guid: 8a5cfaf1cbaafae4fb005f6689cd5a32
+  - enabled: 1
+    path: Assets/Scenes/GluttonyLevel.unity
+    guid: 8baae7e0f826b854397202832030af95
+  - enabled: 1
+    path: Assets/Scenes/Bar2.unity
+    guid: ac7528f56281dd84ead9fd132c45991b
+  - enabled: 1
+    path: Assets/Scenes/Boss1.unity
+    guid: d27c2ab4ead8ea548bfb1b5c6a9feae7
+  m_configObjects: {}
