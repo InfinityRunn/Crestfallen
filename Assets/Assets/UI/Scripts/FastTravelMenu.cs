@@ -58,11 +58,11 @@ public class FastTravelMenu : MonoBehaviour
 
     public void BarRockBottom()
     {
-        StartCoroutine(FastTravel(0));
+        StartCoroutine(FastTravel(1));
     }
 
     public void Bar2()
     {
-        StartCoroutine(FastTravel(2));
+        StartCoroutine(FastTravel(3));
     }
 }

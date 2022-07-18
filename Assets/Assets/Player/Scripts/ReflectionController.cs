@@ -38,7 +38,7 @@ public class ReflectionController: MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
+        /*if (Input.GetKeyDown(KeyCode.H))
         {
             StorePlayerStats();
             halo.GetComponent<HaloAnim>().xHaloOffset = -(halo.GetComponent<HaloAnim>().xHaloOffset);
@@ -53,7 +53,7 @@ public class ReflectionController: MonoBehaviour
             reflection.GetComponent<ReflectionMovement>().enabled = true;
             ApplyPlayerStats();
             ApplyReflectionStats();
-        }
+        }*/
     }
 
     void StorePlayerStats()

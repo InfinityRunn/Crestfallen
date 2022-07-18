@@ -5,12 +5,12 @@ using UnityEngine;
 public class HaloAnim : MonoBehaviour
 {
     private float speed = 2f;
-    private float maxRotation = 4f;
+    private float maxRotation = 3f;
     private GameObject haloTracking;
     public float xHaloOffset = -.12f;
     [SerializeField] private float yHaloOffset = .9f;
     [SerializeField] private float zHaloOffset = -1;
-    [SerializeField] private float floatSpeed = 20f;
+    [SerializeField] private float floatSpeed = 100f;
     Vector3 targetPos;
 
     private void Start()

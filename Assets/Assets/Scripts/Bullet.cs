@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private float speed = 10f;
+    public float speed = 5f;
     private Rigidbody2D rb;
 
 
@@ -15,16 +15,24 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        transform.position += transform.forward * Time.deltaTime * speed;
+        transform.localPosition += -transform.right * Time.deltaTime * speed;
+        //transform.Translate(Vector3.forward * Time.deltaTime * speed, Space.Self);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !other.isTrigger)
+        if (other.CompareTag("Player"))
         {
             other.GetComponent<PlayerMovement>().TakeSpikeDamage();
+            Destroy(this.gameObject);
         }
 
+        StartCoroutine(Destroy());
+    }
+
+    IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(3.0f);
         Destroy(this.gameObject);
     }
 }

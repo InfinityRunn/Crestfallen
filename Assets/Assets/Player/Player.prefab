@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6973508802923453845}
   - component: {fileID: 3372509299266094296}
   - component: {fileID: 8037698045861034035}
+  - component: {fileID: 6904731452831220410}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1495437460939603207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.36, y: 21.05, z: 0}
-  m_LocalScale: {x: 5.61375, y: 5.6025, z: 1}
+  m_LocalScale: {x: 4.5, y: 4.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2bd185fccec84754898d6a92b0ba2dbb, type: 3}
+  m_Sprite: {fileID: -4685101107577584905, guid: 1fcd355acd8c9104f8b553080abb855a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,18 +100,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0001745373, y: -0.00047793984}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.32}
+    oldSize: {x: 0.18, y: 0.42}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15927309, y: 0.31874698}
+  m_Size: {x: 0.18, y: 0.42}
   m_EdgeRadius: 0
 --- !u!50 &6973508802923453845
 Rigidbody2D:
@@ -129,7 +130,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: 91b7be199701e064587cdfac58947d54, type: 2}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -162,16 +163,18 @@ MonoBehaviour:
   hangTime: 0.1
   jumpBufferLength: 0.1
   keyCount: 0
-  groundRaycastLength: 1
-  groundRaycastOffset: {x: 0.45, y: 0, z: 0}
+  groundRaycastLength: 1.05
+  groundRaycastOffset: {x: 0.405, y: 0, z: 0}
   topRaycastLength: 1.15
-  edgeRaycastOffset: {x: 0.45, y: 0, z: 0}
-  innerRaycastOffset: {x: 0.25, y: 0, z: 0}
+  edgeRaycastOffset: {x: 0.405, y: 0, z: 0}
+  innerRaycastOffset: {x: 0.205, y: 0, z: 0}
   maxHealth: 100
   currentHealth: 100
   invincibilitySeconds: 1
   healthbar: {fileID: 0}
   spikeDamagePerSecond: 20
+  gameOverScreen: {fileID: 0}
+  recordTime: 3
 --- !u!114 &8037698045861034035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,3 +205,22 @@ MonoBehaviour:
   topRaycastLength: 0
   edgeRaycastOffset: {x: 0, y: 0, z: 0}
   innerRaycastOffset: {x: 0, y: 0, z: 0}
+--- !u!95 &6904731452831220410
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495437460939603207}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f1c6d4c0381d574c849cc7451709a60, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

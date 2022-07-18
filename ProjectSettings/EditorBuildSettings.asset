@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Prototype2.unity
     guid: 818e899d6826a7c4b9b081c3e89dee04
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: d52249c8d02834a43b78333d7e38665a
+  - enabled: 1
     path: Assets/Scenes/Bar - Rock Bottom.unity
     guid: 8a5cfaf1cbaafae4fb005f6689cd5a32
   - enabled: 1
